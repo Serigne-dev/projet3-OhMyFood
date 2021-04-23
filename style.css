@@ -28,6 +28,8 @@ input, textarea{
 
 .recherche{
 	text-align: center;
+	background-color: #D0D0D0;
+	padding-bottom: 30px;
 }
 
 button{
@@ -55,6 +57,7 @@ button{
 	border-radius: 15px;
 	padding: 10px;
 	margin: 10px;
+	background-color: #D0D0D0;
 }
 
 .elements-fonctionnement{
