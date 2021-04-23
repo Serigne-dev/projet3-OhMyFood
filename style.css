@@ -1,0 +1,91 @@
+@font-face{
+	font-family: Shrikhand;
+	src: url("Shrikhand-Regular.ttf");
+	font-family: Roboto;
+	src: url("Roboto-Regular.ttf");
+}
+
+h1{
+	font-family: Shrikhand;
+}
+
+p{
+	font-family: Roboto;
+}
+
+header{
+	text-align: center;
+}
+
+input, textarea{
+	background-color: grey;
+	border: hidden;
+}
+
+.input{
+	background-color: grey;
+}
+
+.recherche{
+	text-align: center;
+}
+
+button{
+	color: white;
+	background-color: #FF79DA;
+	font-weight: bold;
+	font-size: 1em;
+	border: none;
+	padding: 15px 15px 15px 15px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.numero{
+	width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #9356DC;
+    text-align: center;
+    color: white;
+}
+
+.fonctionnement .elements-fonctionnement{
+	display: flex;
+	border: solid;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.elements-fonctionnement{
+	text-align: center;
+}
+
+.restaurants{
+	background-color: grey;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.restaurants div{
+	flex: 1;
+	background-color: white;
+	width: 95%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+    border: solid;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.restaurants img{
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+footer{
+	color: white;
+	background-color: black;
+}
