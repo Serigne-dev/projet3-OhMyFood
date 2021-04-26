@@ -1,7 +1,10 @@
 @font-face{
-	font-family: Shrikhand;
+	font-family: Shrikhand ;
 	src: url("Shrikhand-Regular.ttf");
-	font-family: Roboto;
+}
+
+@font-face{
+	font-family: Roboto ;
 	src: url("Roboto-Regular.ttf");
 }
 
@@ -16,6 +19,10 @@ p{
 header{
 	text-align: center;
 	padding-bottom: 20px;
+}
+
+.fa-arrow-left{
+	float: left;
 }
 
 input, textarea{
@@ -38,14 +45,25 @@ input, textarea{
 	margin-left: auto;
 }
 
+.titrerestau{
+	display: flex;
+}
+
 button{
 	color: white;
-	background-color: #FF79DA;
+	background-color: #9356DC;
 	font-weight: bold;
 	font-size: 1em;
 	border: none;
 	padding: 15px 15px 15px 15px;
 	border-radius: 25px 25px 25px 25px;
+	box-shadow: 0px 8px 10px #696767;
+	transition-duration: 0.8s;
+}
+
+button:hover{
+	background-color: #FF79DA;
+	box-shadow: 0px 15px 8px #696767;
 }
 
 .numero{
@@ -80,6 +98,11 @@ button{
 	justify-content: center;
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 .elements i{
 	margin-right: 15px;
 }
@@ -88,6 +111,14 @@ button{
 	float: right;
 	margin-top: -80px;
 	margin-right: 20px;
+}
+
+.fa-heart{
+	animation-duration: 1s;
+}
+
+.fa-heart:hover{
+	color: red;
 }
 
 .restaurants h1{
@@ -129,11 +160,38 @@ button{
 footer{
 	color: white;
 	background-color: black;
+	padding: 20px;
+}	
+
+footer i{
+	margin-right: 20px;
 }
 
 @media all and (max-width: 768px){
 
+	.logo{
+		width: 50%;
+	}
+
+	.recherche{
+		width: 100%;
+		text-align: center;
+	}
+
+	.fonctionnement h1{
+		text-align: left;
+	}
+
 	.elements{
 		flex-direction: column;
+	}
+
+	.restaurants1, .restaurants2{
+		flex-direction: column;
+	}
+
+	.restaurants h1{
+		text-align: left;
+		margin-left: 10px;
 	}
 }
