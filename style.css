@@ -15,6 +15,7 @@ p{
 
 header{
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 input, textarea{
@@ -54,16 +55,22 @@ button{
     background: #9356DC;
     text-align: center;
     color: white;
+    margin-left: -15px;
+    margin-right: 20px;
 }
 
 .fonctionnement h1{
 	text-align: center;
 }
 
+.fonctionnement{
+	padding-bottom: 20px;
+}
+
 .fonctionnement .elements-fonctionnement{
 	display: flex;
 	border-radius: 15px;
-	padding: 10px;
+	padding: 10px 50px 10px 5px;
 	margin: 10px;
 	background-color: #D0D0D0;
 }
@@ -71,6 +78,21 @@ button{
 .elements{
 	display: flex;
 	justify-content: center;
+}
+
+.elements i{
+	margin-right: 15px;
+}
+
+.card i{
+	float: right;
+	margin-top: -80px;
+	margin-right: 20px;
+}
+
+.restaurants h1{
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 .restaurants{
@@ -95,8 +117,10 @@ button{
     border-radius: 10px;
 }
 
+
 .restaurants img{
 	width: 100%;
+	height: 320px;
 	border-radius: 10px;
 	object-fit: cover;
 }
