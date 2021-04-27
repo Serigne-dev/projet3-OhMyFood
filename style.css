@@ -5,7 +5,7 @@
 
 @font-face{
 	font-family: Roboto ;
-	src: url("Roboto-Regular.ttf");
+	src: url("Roboto-Regular.ttf"), ("Roboto-Black.ttf"), ("Roboto-BlackItalic.ttf"), ("Roboto-Bold.ttf"), ("Roboto-BoldItalic.ttf"), ("Roboto-Italic.ttf"), ("Roboto-Italic.ttf"), ("Roboto-LightItalic.ttf"), ("Roboto-Medium.ttf"), ("Roboto-MediumItalic.ttf"), ("Roboto-Thin.ttf"), ("Roboto-ThinItalic.ttf");
 }
 
 h1{
@@ -14,6 +14,10 @@ h1{
 
 p, h2{
 	font-family: Roboto;
+}
+
+h2{
+	text-align: center;
 }
 
 .loader{
@@ -64,23 +68,32 @@ header{
 
 .fa-arrow-left{
 	float: left;
+	padding-top: 15px;
+}
+
+.fa-archive{
+	color: #9356DC;
+}
+
+.fa-list, .fa-mobile-alt{
+	color: grey;
 }
 
 input, textarea{
-	background-color: grey;
+	background-color: #C3C3C3;
 	border: hidden;
 }
 
 
 .input{
-	background-color: grey;
+	background-color: #C3C3C3;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 .recherche{
 	text-align: center;
-	background-color: #D0D0D0;
+	background-color: #E8E8E8;
 	padding-bottom: 30px;
 	width: 70%;
 	margin-right: auto;
@@ -89,6 +102,14 @@ input, textarea{
 
 .titrerestau{
 	display: flex;
+	padding-left: 10px;
+	justify-content: center;
+}
+
+.titrerestau i{
+	float: right;
+	margin-top: 30px;
+	margin-left: 100px;
 }
 
 button{
@@ -110,13 +131,13 @@ button:hover{
 
 .numero{
 	width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background: #9356DC;
-    text-align: center;
-    color: white;
-    margin-left: -15px;
-    margin-right: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background: #9356DC;
+	text-align: center;
+	color: white;
+	margin-left: -15px;
+	margin-right: 20px;
 }
 
 .fonctionnement h2{
@@ -132,7 +153,8 @@ button:hover{
 	border-radius: 15px;
 	padding: 10px 50px 10px 5px;
 	margin: 10px;
-	background-color: #D0D0D0;
+	background-color: #E8E8E8;
+	box-shadow: 0px 8px 10px #696767;
 }
 
 .elements{
@@ -163,13 +185,8 @@ a{
 	color: red;
 }
 
-.restaurants h2{
-	text-align: center;
-	margin-bottom: 30px;
-}
-
 .restaurants{
-	background-color: #D0D0D0;
+	background-color: #E8E8E8;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -178,22 +195,23 @@ a{
 	display: flex;
 }
 
-
 .restaurants .card{
 	flex: 1;
 	background-color: white;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
-    border: solid;
-    margin: 20px;
-    border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto
+	border: solid;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 10px #696767;
 }
 
 .restaurants img{
 	width: 100%;
 	height: 320px;
-	border-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 	object-fit: cover;
 }
 
@@ -204,56 +222,96 @@ a{
 }
 
 .menus{
-	background-color: #D0D0D0;
+	background-color: #E8E8E8;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-radius: 50px;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	} 
+
 }
 
 .entrees div{
 	background-color: white;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
-    border: solid black;
-    margin: 20px;
-    border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto
+	border: solid black;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 10px #696767;
+	flex: 1;
+	animation: appear 1500ms;
+}
+
+.entrees{
+	padding-bottom: 15px;
 }
 
 .plats div{
 	background-color: white;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
-    border: solid black;
-    margin: 20px;
-    border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto
+	border: solid black;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 10px #696767;
+	flex: 1;
+	animation: appear 1500ms;
+}
+
+.plats{
+	padding-bottom: 15px;
 }
 
 .desserts div{
 	background-color: white;
 	display: block;
-    margin-left: auto;
-    margin-right: auto
-    border: solid black;
-    margin: 20px;
-    border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto
+	border: solid black;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 10px #696767;
+	flex: 1;
+	animation: appear 1500ms;
+}
+
+.desserts{
+	padding-bottom: 10px;
 }
 
 .boutton{
-	width: 10%;
+	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 20px;
 }
 
-.titrerestau{
-	justify-content: center;
-}
-
 .menus h2{
 	text-decoration: underline;
 	text-decoration-color: #99E2D0;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.menus, h3, p{
+	padding-left: 10px;
+}
+
+.entrees, .plats, .desserts{
+	display: flex;
 }
 
 footer{
@@ -264,6 +322,11 @@ footer{
 
 footer i{
 	margin-right: 20px;
+}
+
+footer a{
+	color: white;
+	padding-left: 10px;
 }
 
 @media all and (max-width: 768px){
@@ -293,4 +356,26 @@ footer i{
 		text-align: left;
 		margin-left: 10px;
 	}
+
+	.entrees, .plats, .desserts{
+		flex-direction: column;
+	}	
+
+	.menus h2{
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	.menus h1{
+		text-align: left;
+	}
+
+	.titrerestau{
+		text-align: left;
+	}
+
+	.fa-heart{
+		margin-right: 15px;
+	}
+
 }
