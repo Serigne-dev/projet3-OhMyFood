@@ -12,7 +12,7 @@ h1{
 	font-family: Shrikhand;
 }
 
-p{
+p, h2{
 	font-family: Roboto;
 }
 
@@ -25,7 +25,7 @@ p{
 	height: 700px;
 	position: absolute;
 	background: url(sweettexture.jpg) white;
-	animation: disappear 0ms 4000ms both;
+	animation: disappear 0ms 2000ms both;
 }
 
 @keyframes disappear{
@@ -54,7 +54,7 @@ p{
 	width: 300px;
 	height: 300px;
 	margin: 0 auto;
-	animation: disappear 0ms 4000ms both, spin 2s linear 2;
+	animation: disappear 0ms 2000ms both, spin 2s linear 1;
 }
 
 header{
@@ -70,6 +70,7 @@ input, textarea{
 	background-color: grey;
 	border: hidden;
 }
+
 
 .input{
 	background-color: grey;
@@ -118,7 +119,7 @@ button:hover{
     margin-right: 20px;
 }
 
-.fonctionnement h1{
+.fonctionnement h2{
 	text-align: center;
 }
 
@@ -162,7 +163,7 @@ a{
 	color: red;
 }
 
-.restaurants h1{
+.restaurants h2{
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -189,7 +190,6 @@ a{
     border-radius: 10px;
 }
 
-
 .restaurants img{
 	width: 100%;
 	height: 320px;
@@ -197,6 +197,64 @@ a{
 	object-fit: cover;
 }
 
+.imagerestau img{
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+}
+
+.menus{
+	background-color: #D0D0D0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 50px;
+}
+
+.entrees div{
+	background-color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+    border: solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.plats div{
+	background-color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+    border: solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.desserts div{
+	background-color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+    border: solid black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.boutton{
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+.titrerestau{
+	justify-content: center;
+}
+
+.menus h2{
+	text-decoration: underline;
+	text-decoration-color: #99E2D0;
+}
 
 footer{
 	color: white;
@@ -219,7 +277,7 @@ footer i{
 		text-align: center;
 	}
 
-	.fonctionnement h1{
+	.fonctionnement h2{
 		text-align: left;
 	}
 
@@ -231,7 +289,7 @@ footer i{
 		flex-direction: column;
 	}
 
-	.restaurants h1{
+	.restaurants h2{
 		text-align: left;
 		margin-left: 10px;
 	}
