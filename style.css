@@ -16,6 +16,47 @@ p{
 	font-family: Roboto;
 }
 
+.loader{
+	height: 0px;
+}
+
+.image-accueil{
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	background: url(sweettexture.jpg) white;
+	animation: disappear 0ms 4000ms both;
+}
+
+@keyframes disappear{
+	from{
+		transform: translateX(0);
+	}
+	to{
+		transform: translateX(-400%);
+	}
+}
+
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	} 
+
+}
+
+.loading-spinner{
+	border: 20px solid #CAC1C1;
+	border-radius: 50%;
+	border-top: 20px solid blue;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	animation: disappear 0ms 4000ms both, spin 2s linear 2;
+}
+
 header{
 	text-align: center;
 	padding-bottom: 20px;
