@@ -121,6 +121,7 @@ button{
 	padding: 15px 15px 15px 15px;
 	border-radius: 25px 25px 25px 25px;
 	box-shadow: 0px 8px 10px #696767;
+	width: 50%;
 	transition-duration: 0.8s;
 }
 
@@ -241,7 +242,19 @@ a{
 
 }
 
-.entrees div{
+@keyframes appear-right{
+	from{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	} 
+
+}
+
+.cardmenu{
 	background-color: white;
 	display: block;
 	margin-left: auto;
@@ -258,34 +271,12 @@ a{
 	padding-bottom: 15px;
 }
 
-.plats div{
-	background-color: white;
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-	border: solid black;
-	margin: 10px;
-	border-radius: 10px;
-	box-shadow: 0px 8px 10px #696767;
-	flex: 1;
-	animation: appear 1500ms;
+.plats div:hover > .fa-check-circle{
+	animation: appear-right 1500ms;
 }
 
 .plats{
 	padding-bottom: 15px;
-}
-
-.desserts div{
-	background-color: white;
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-	border: solid black;
-	margin: 10px;
-	border-radius: 10px;
-	box-shadow: 0px 8px 10px #696767;
-	flex: 1;
-	animation: appear 1500ms;
 }
 
 .desserts{
@@ -293,10 +284,8 @@ a{
 }
 
 .boutton{
-	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 .menus h2{
@@ -313,6 +302,13 @@ a{
 .entrees, .plats, .desserts{
 	display: flex;
 }
+
+.fa-check-circle{
+	float: right;
+	margin-top: -60px;
+	margin-right: 15px;
+}
+
 
 footer{
 	color: white;
