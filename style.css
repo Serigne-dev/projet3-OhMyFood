@@ -156,6 +156,8 @@ button:hover{
 	margin: 10px;
 	background-color: #E8E8E8;
 	box-shadow: 0px 8px 10px #696767;
+	height: 40px;
+	align-items: center;
 }
 
 .elements{
@@ -315,6 +317,12 @@ footer{
 	background-color: black;
 	padding: 20px;
 }	
+
+footer img{
+	filter: grayscale(1) invert(1);
+	width: 100px;
+	padding-left: 10px;
+}
 
 footer i{
 	margin-right: 20px;
