@@ -176,16 +176,8 @@ a{
 
 .card i{
 	float: right;
-	margin-top: -80px;
+	margin-top: -50px;
 	margin-right: 20px;
-}
-
-.fa-heart{
-	animation-duration: 1s;
-}
-
-.fa-heart:hover{
-	color: red;
 }
 
 .restaurants{
@@ -253,6 +245,16 @@ a{
 		opacity: 1;
 		transform: translateX(0);
 	} 
+}
+
+.coeur2{
+	color: #9356DC;
+	transform: scale(0);
+	transition: transform 500ms ease-in-out;
+}
+
+.coeur1:hover + .coeur2{
+	transform: scale(1);
 
 }
 
@@ -273,7 +275,7 @@ a{
 	padding-bottom: 15px;
 }
 
-.plats div:hover > .fa-check-circle{
+.plats div:hover > .circle{
 	animation: appear-right 1500ms;
 }
 
@@ -298,17 +300,36 @@ a{
 }
 
 .menus, h3, p{
-	padding-left: 10px;
+	margin: 10px;
 }
 
 .entrees, .plats, .desserts{
 	display: flex;
 }
 
+.menus .cardmenu{
+	display: flex;
+}
+
 .fa-check-circle{
-	float: right;
-	margin-top: -60px;
-	margin-right: 15px;
+	margin-top: 20px;
+	color: white;
+}
+
+.circle{
+	background-color: #99E2D0;
+	width: 20%;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.prix{
+	font-weight: bold;
+	width: 20%;
+	margin-top: 45px;
+}
+
+.descriptionmenu{
+	width: 60%;
 }
 
 
