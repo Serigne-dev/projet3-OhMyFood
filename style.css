@@ -12,7 +12,7 @@ h1{
 	font-family: Shrikhand;
 }
 
-p, h2{
+p, h2; h3{
 	font-family: Roboto;
 }
 
@@ -48,7 +48,6 @@ h2{
 	to{
 		transform: rotate(360deg);
 	} 
-
 }
 
 .loading-spinner{
@@ -83,7 +82,6 @@ input, textarea{
 	background-color: #C3C3C3;
 	border: hidden;
 }
-
 
 .input{
 	background-color: #C3C3C3;
@@ -233,17 +231,17 @@ a{
 		opacity: 1;
 		transform: translateY(0);
 	} 
-
 }
 
 @keyframes appear-right{
 	from{
 		opacity: 0;
-		transform: translateX(100px);
+		transform: scaleX(0);
 	}
 	to{
 		opacity: 1;
-		transform: translateX(0);
+		width: 50%;
+		transform: scaleX(1);
 	} 
 }
 
@@ -255,7 +253,6 @@ a{
 
 .coeur1:hover + .coeur2{
 	transform: scale(1);
-
 }
 
 .cardmenu{
@@ -275,16 +272,20 @@ a{
 	padding-bottom: 15px;
 }
 
-.plats div:hover > .circle{
-	animation: appear-right 1500ms;
-}
-
 .plats{
 	padding-bottom: 15px;
 }
 
 .desserts{
 	padding-bottom: 10px;
+}
+
+.cardmenu:hover .circle > .fa-check-circle{
+	animation: spin 1s linear 1;
+}
+
+.cardmenu:hover > .circle{
+	animation: appear-right 1500ms both;
 }
 
 .boutton{
@@ -301,6 +302,7 @@ a{
 
 .menus, h3, p{
 	margin: 10px;
+	text-overflow: ellipsis;
 }
 
 .entrees, .plats, .desserts{
@@ -318,20 +320,23 @@ a{
 
 .circle{
 	background-color: #99E2D0;
-	width: 20%;
+	width: 0;
 	border-radius: 0px 10px 10px 0px;
+	transform-origin: right;
+	opacity: 0;
+	text-align: center;
 }
 
 .prix{
 	font-weight: bold;
-	width: 20%;
 	margin-top: 45px;
+	width: 15%;
 }
 
 .descriptionmenu{
-	width: 60%;
-}
+	width: 95%;
 
+}
 
 footer{
 	color: white;
