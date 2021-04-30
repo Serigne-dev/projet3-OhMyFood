@@ -302,7 +302,6 @@ a{
 
 .menus, h3, p{
 	margin: 10px;
-	text-overflow: ellipsis;
 }
 
 .entrees, .plats, .desserts{
@@ -335,7 +334,19 @@ a{
 
 .descriptionmenu{
 	width: 95%;
+	min-width: 0;
+}
 
+.descriptionmenu > h3{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.descriptionmenu > p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 footer{
