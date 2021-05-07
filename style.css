@@ -9,6 +9,7 @@ h1{
 
 p, h2, h3{
 	font-family: 'Roboto', sans-serif;
+	margin: 10px;
 }
 
 h2{
@@ -17,18 +18,22 @@ h2{
 
 body{
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .loader{
-	height: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	animation: disappear 0ms 2000ms both;
+	z-index: 1;
 }
 
 .image-accueil{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url(sweettexture.jpg) white;
-	animation: disappear 0ms 2000ms both;
+	background: url(sweettexture.jpg) white;	
 }
 
 @keyframes disappear{
@@ -92,7 +97,7 @@ input, textarea{
 	text-align: center;
 	background-color: #E8E8E8;
 	padding-bottom: 30px;
-	width: 70%;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -192,11 +197,22 @@ a{
 	background-color: white;
 	display: block;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 	border: solid;
 	margin: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 8px 10px #696767;
+	position: relative;
+	z-index: 0;
+}
+
+.nouveau{
+	width: 120px;
+	color: #00B386;
+	background-color: #99E2D0;
+	position: absolute;
+	top: 20px;
+	right: 10px;
 }
 
 .restaurants img{
@@ -263,13 +279,28 @@ a{
 	background-color: white;
 	display: block;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 	border: solid black;
 	margin: 10px;
 	border-radius: 10px;
 	box-shadow: 0px 8px 10px #696767;
 	flex: 1;
-	animation: appear 1500ms;
+}
+
+.anim1{
+	animation: appear 1000ms 0.0s both;
+}
+
+.anim2{
+	animation: appear 1000ms 0.15s both;
+}
+
+.anim3{
+	animation: appear 1000ms 0.3s both;
+}
+
+.anim4{
+	animation: appear 1000ms 0.45s both;
 }
 
 .entrees{
@@ -302,11 +333,6 @@ a{
 	text-decoration-color: #99E2D0;
 	padding-left: 10px;
 	text-align: center;
-}
-
-
-.entrees, .plats, .desserts{
-	display: flex;
 }
 
 .menus .cardmenu{
