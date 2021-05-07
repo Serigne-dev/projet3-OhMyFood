@@ -198,7 +198,6 @@ a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: solid;
 	margin: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 8px 10px #696767;
@@ -280,7 +279,6 @@ a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: solid black;
 	margin: 10px;
 	border-radius: 10px;
 	box-shadow: 0px 8px 10px #696767;
